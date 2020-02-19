@@ -27,9 +27,10 @@ class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if root is None: 
             return 0
-        
+        #create stacks for holding the node and the depth value
         treeStack =[]
         depthStack= []
+        # holds the final result i.e depth value
         result=0
         
         treeStack.append(root)
